@@ -1,0 +1,92 @@
+:root {
+    --clr-400: hsl(0, 0%, 100%);
+    --clr-500: hsl(212, 45%, 89%);
+    --clr-600: hsl(220, 15%, 55%);
+    --clr-800: hsl(218, 44%, 22%);
+
+    --bg-clr: var(--clr-500);
+    --bg-modal-clr: var(--clr-400);
+    --fn-heading-clr: var(--clr-800);
+    --fn-body-clr: var(--clr-600);
+
+    --ff: "Outfit", sans-serif;
+    --ff-heading: var(--ff);
+    --ff-body: var(--ff);
+    --ff-footer: var(--ff);
+    --fw-heading: 700;
+    --fw-body: 400;
+
+    --fs-heading: 1.25rem;
+    --fs-body: 0.875rem;
+    --fs-footer: 0.75rem;
+
+    --modal-sw: hsl(0, 0%, 60%, 10%);
+    --link-clr: hsl(216, 66%, 42%);
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--clr-500);
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+main {
+	max-width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+h1{
+    font-family: var(--ff-heading);
+	font-size: var(--fs-heading);
+	font-weight: var(--fw-heading);
+	color: var(--clr-800);
+	margin-block: 1.125rem;
+}
+p {
+	font-family: var(--ff-body);
+	font-size: var(--fs-body);
+	font-weight: var(--fw-body);
+	color: var(--clr-600);
+	margin-block-end: 1rem;
+	padding-inline: 0.5rem;
+}
+img {
+	border-radius: 0.5rem;
+	max-width: 100%;
+}
+.modal {
+	max-width: 35ch;
+	margin: auto;
+	text-align: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0.25rem 0.5rem 1rem var(--modal-sw);
+	background-color: var(--clr-400);
+}
+footer {
+	margin-block: 1rem;
+	text-align: center;
+	margin-inline: 1.25rem;
+	font-family: var(--ff-footer);
+	font-size: var(--fs-footer);
+	color: var(--clr-800);
+}
+
+a:link,
+a:visited {
+	color: var(--link-clr);
+	text-decoration: none;
+}
